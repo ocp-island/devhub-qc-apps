@@ -1,0 +1,17 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: petstore-devs
+  title: Petstore Developers
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: petstore
+  title: Petstore System
+spec:
+  owner: petstore-devs
